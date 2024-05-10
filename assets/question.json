@@ -1,0 +1,102 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "options": [
+            "Paris",
+            "London",
+            "Berlin",
+            "Rome"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": [
+            "William Shakespeare",
+            "Charles Dickens",
+            "Jane Austen",
+            "Leo Tolstoy"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Continent Brazil located in?",
+        "options": [
+            "Europe",
+            "Asia",
+            "North America",
+            "South America"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "options": [
+            "Earth",
+            "Jupiter",
+            "Saturn",
+            "Venus"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "What is the longest river in the world?",
+        "options": [
+            "Nile",
+            "Amazon",
+            "Mississippi",
+            "Danube"
+        ],
+        "correctIndex": 0
+    },
+    {
+        "question": "Who is the main character in the Harry Potter series?",
+        "options": [
+            "Hermione Granger",
+            "Ron Weasley",
+            "Harry Potter",
+            "Neville Longbottom"
+        ],
+        "correctIndex": 2
+    },
+    {
+        "question": "What is the smallest planet in our solar system?",
+        "options": [
+            "Venus",
+            "Mars",
+            "Earth",
+            "Mercury"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "What is the highest mountain in the world?",
+        "options": [
+            "Mont Blanc",
+            "Everest",
+            "Kilimanjaro",
+            "Aconcagua"
+        ],
+        "correctIndex": 1
+    },
+    {
+        "question": "What is the name of the famous painting by Leonardo da Vinci that depicts a woman?",
+        "options": [
+            "Starry Night",
+            "The Persistence of Memory",
+            "The Last Supper",
+            "Mona Lisa"
+        ],
+        "correctIndex": 3
+    },
+    {
+        "question": "Who is first president of Indonesia?",
+        "options": [
+            "Luhut Binsar Pandjaitan",
+            "Megawati",
+            "BJ Habibie",
+            "Soekarno"
+        ],
+        "correctIndex": 3
+    }
+]
