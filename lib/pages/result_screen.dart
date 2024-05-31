@@ -18,7 +18,6 @@ class ResultScreen extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -45,10 +44,6 @@ class ResultScreen extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    // Text(
-                    //   '$score',
-                    //   style: const TextStyle(fontSize: 80),
-                    // ),
                     RichText(
                       text: TextSpan(
                         children: [
@@ -56,8 +51,7 @@ class ResultScreen extends StatelessWidget {
                             text: score.toString(),
                             style: TextStyle(
                               fontSize: 80,
-                              color:
-                                  Theme.of(context).textTheme.titleLarge!.color,
+                              color: Theme.of(context).textTheme.titleLarge!.color,
                             ),
                           ),
                           const TextSpan(text: ' '),
@@ -65,8 +59,7 @@ class ResultScreen extends StatelessWidget {
                             text: '/ $question',
                             style: TextStyle(
                               fontSize: 20,
-                              color:
-                                  Theme.of(context).textTheme.titleLarge!.color,
+                              color: Theme.of(context).textTheme.titleLarge!.color,
                             ),
                           ),
                         ],

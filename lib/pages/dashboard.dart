@@ -21,8 +21,9 @@ class _DashboardState extends State<Dashboard> {
   int questionIndex = -1;
   int selectedIndex = -1;
 
+  // Function
   Future<void> loadQuestions() async {
-    String jsonString = await rootBundle.loadString('assets/question.json');
+    var jsonString = await rootBundle.loadString('assets/question.json');
     List<dynamic> jsonMap = json.decode(jsonString);
 
     setState(() {
@@ -30,6 +31,7 @@ class _DashboardState extends State<Dashboard> {
     });
   }
 
+  // initState
   @override
   void initState() {
     loadQuestions();
@@ -39,29 +41,13 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      // title: const Text('Dashboard'),
-      // actions: [
-      //   IconButton(
-      //     onPressed: () {
-      //       controller.previousPage(
-      //         duration: const Duration(milliseconds: 400),
-      //         curve: Curves.easeInOut,
-      //       );
-      //     },
-      //     icon: const Icon(CupertinoIcons.arrow_up),
-      //   ),
-      //   IconButton(
-      //     onPressed: () {
-      //       controller.nextPage(
-      //         duration: const Duration(milliseconds: 400),
-      //         curve: Curves.easeInOut,
-      //       );
-      //     },
-      //     icon: const Icon(CupertinoIcons.arrow_down),
-      //   ),
-      // ],
-      // ),
+      appBar: AppBar(
+        title: const Text('Flutter Quiz App'),
+        centerTitle: false,
+        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        surfaceTintColor: Theme.of(context).scaffoldBackgroundColor,
+        elevation: 0,
+      ),
       body: PageView(
         controller: controller,
         scrollDirection: Axis.vertical,
@@ -110,9 +96,7 @@ class _DashboardState extends State<Dashboard> {
             title: Text(e.value.options[index].toString()),
             trailing: Icon(
               CupertinoIcons.check_mark_circled,
-              color: e.value.correctIndex == selectedIndex
-                  ? Colors.white
-                  : Colors.transparent,
+              color: e.value.correctIndex == selectedIndex ? Colors.white : Colors.transparent,
             ),
             onTap: () {
               int selected = e.value.options.indexOf(e.value.options[index]);
@@ -120,9 +104,6 @@ class _DashboardState extends State<Dashboard> {
                 score++;
               }
               questionIndex++;
-
-              debugPrint('selectedIndex $selectedIndex');
-              debugPrint('correctIndex ${e.value.correctIndex}');
 
               setState(() {});
 
@@ -138,7 +119,7 @@ class _DashboardState extends State<Dashboard> {
                     (route) => false);
               } else {
                 controller.nextPage(
-                  duration: const Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 200),
                   curve: Curves.easeInOut,
                 );
               }
